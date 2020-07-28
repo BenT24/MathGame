@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MathGame</title>
+
+    <script defer src="/__/firebase/7.16.1/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/7.16.1/firebase-auth.js"></script>
+    <script defer src="/__/firebase/7.16.1/firebase-database.js"></script>
+    <script defer src="/__/firebase/7.16.1/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+
+    <link href="css/index.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <h1>Math Game</h1>
+    <div class="info" id="rules" onmouseleave="closeRules()">
+        <img src="C:\Users\benya%20home\Pictures\pixil-frame-0" class="info-button" id="rules-button" onclick="showRules()" alt="Rules">
+        <div class="info info-text" id="rules-text" style="display: none">
+            <h2>The Rules</h2>
+            <h3>Starting The Game</h3>
+            <p>Click the button in the top left of this website that says "Create New Game". Once you do the game should
+                show you a code. After that the person you are playing against should press the button that says
+                "Join Game". Once that player does, the website should show to that person an input window in which
+                he or she should type in the code that was shown to you.</p>
+            <h3>Playing The Game</h3>
+            <p>You will be given math problems, each of which should not take you too long to complete. As you solve
+            these problems correctly, your vehicle will move forwards at the top of the screen. If, on the other hand
+            you get problems wrong your vehicle will get moved backwards. The first vehicle that get to the finish
+            line at the end of the race wins.</p>
+        </div>
+    </div>
+</body>
+<script src="js/main.js"></script>
+</html>
